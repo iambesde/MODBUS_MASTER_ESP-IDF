@@ -50,6 +50,10 @@
         ESP_LOGE(MB_PORT_TAG, "%s(%u): " str, __FUNCTION__, __LINE__, ##__VA_ARGS__); \
         return (ret_val); \
     }
+typedef int     SOCKET;
+
+#define SOCKET_ERROR (-1)
+#define INVALID_SOCKET (~0)
 
 #define	INLINE                      inline
 #define PR_BEGIN_EXTERN_C           extern "C" {
